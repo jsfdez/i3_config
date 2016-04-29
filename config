@@ -148,9 +148,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Control+l exec "~/.i3/i3lock_screenshot.sh"
 #bindsym $mod+Control+l exec "i3lock -c 000000"
 exec xautolock -time 15 -locker '~/.i3/i3lock_screenshot.sh' &
+exec /usr/bin/compton --config ~/.i3/compton.conf~.i3/config
 
 bindsym $mod+z sticky toggle
-bindsym $mod+y fullscreen disable; floating enable; resize set 400 300; sticky enable; move window to position 100 20
+bindsym $mod+y fullscreen disable; floating enable; resize set 840 550; sticky enable; move window to position 100 20
 
 for_window [title="qtcreator_process_stub"] move scratchpad
 bindsym $mod+F1 scratchpad show
